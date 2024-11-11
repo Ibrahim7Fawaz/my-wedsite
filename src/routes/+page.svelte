@@ -1,15 +1,102 @@
 <!-- YOU CAN DELETE EVERYTHING IN THIS PAGE -->
 
-<div class="container h-full mx-auto flex justify-center items-center">
-	<div class="space-y-5">
-		<h1 class="h1">Let's get cracking bones!</h1>
-		<p>Start by exploring:</p>
-		<ul>
-			<li><code class="code">/src/routes/+layout.svelte</code> - barebones layout</li>
-			<li><code class="code">/src/app.postcss</code> - app wide css</li>
-			<li>
-				<code class="code">/src/routes/+page.svelte</code> - this page, you can replace the contents
-			</li>
-		</ul>
+<!--Delar upp sidan i två delar-->
+
+<!--Delar upp sidan i två delar-->
+<main>
+	<div>
+  
+	  <h1 class="name"> Ibrahimo </h1>
+	  <h2 class="item">Shop</h2>
+	  <h3 id="nummer">World is clod:</h3>
+	  <!--Under denna kommer vi lägga till fler element-->
+  
+ <p id="inspo">
+		"The only way to learn a new programming language is by writing programs in it." - <strong>Dennis Ritchie</strong>, creator of the C programming language.
+	</p>
+	
+	<p style="background-color:pink;">
+		"Every great developer you know got there by solving problems they were unqualified to solve until they actually did it." - <span>Patrick McKenzie, software engineer and entrepreneur</span>.
+	</p>
+
+	
 	</div>
-</div>
+	  <!--Här kommer vi lägga till en bild senare i uppgiften 1.2.4 Extra styling-->  
+	 <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+		<path fill="#FF0066" d="M29.5,-44C37.1,-41,41.4,-30.9,43.5,-21.3C45.7,-11.7,45.8,-2.5,46.6,8.2C47.5,19,49.1,31.5,43.9,38.7C38.7,45.9,26.6,47.8,14.3,53.8C1.9,59.9,-10.8,70,-18.4,66.2C-26,62.4,-28.6,44.7,-40.2,33.5C-51.8,22.4,-72.5,17.9,-75.7,9.6C-78.8,1.3,-64.3,-10.7,-56.1,-24.3C-47.8,-37.9,-45.8,-53,-37.5,-55.7C-29.2,-58.3,-14.6,-48.4,-1.8,-45.6C10.9,-42.7,21.9,-46.9,29.5,-44Z" transform=" translate(100,70)"  />
+	  </svg>
+	  
+  </main>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#a2d9ff" fill-opacity="1" d="M0,32L11.4,74.7C22.9,117,46,203,69,218.7C91.4,235,114,181,137,165.3C160,149,183,171,206,192C228.6,213,251,235,274,208C297.1,181,320,107,343,101.3C365.7,96,389,160,411,197.3C434.3,235,457,245,480,234.7C502.9,224,526,192,549,165.3C571.4,139,594,117,617,144C640,171,663,245,686,234.7C708.6,224,731,128,754,112C777.1,96,800,160,823,197.3C845.7,235,869,245,891,208C914.3,171,937,85,960,53.3C982.9,21,1006,43,1029,74.7C1051.4,107,1074,149,1097,149.3C1120,149,1143,107,1166,85.3C1188.6,64,1211,64,1234,106.7C1257.1,149,1280,235,1303,272C1325.7,309,1349,299,1371,261.3C1394.3,224,1417,160,1429,128L1440,96L1440,320L1428.6,320C1417.1,320,1394,320,1371,320C1348.6,320,1326,320,1303,320C1280,320,1257,320,1234,320C1211.4,320,1189,320,1166,320C1142.9,320,1120,320,1097,320C1074.3,320,1051,320,1029,320C1005.7,320,983,320,960,320C937.1,320,914,320,891,320C868.6,320,846,320,823,320C800,320,777,320,754,320C731.4,320,709,320,686,320C662.9,320,640,320,617,320C594.3,320,571,320,549,320C525.7,320,503,320,480,320C457.1,320,434,320,411,320C388.6,320,366,320,343,320C320,320,297,320,274,320C251.4,320,229,320,206,320C182.9,320,160,320,137,320C114.3,320,91,320,69,320C45.7,320,23,320,11,320L0,320Z"></path></svg>
+  <style>
+	main{
+	  /*Styling för att dela upp sidan i två delar. */
+	  /*Vi kommer gå igenom detta i detalj senare*/
+	  margin: auto;
+	  width: 80vw;
+	  height: 70vh;
+	  display: grid;
+	  grid-template-columns: repeat(2,50%);
+	  overflow: hidden;
+	}
+	div{
+	  /*Styling för att centrera texten i behållaren*/
+	  margin: auto;
+	}
+
+
+	#inspo{
+    font-family: courier;
+    font-size: 160%;
+}
+
+span{
+    color: green;
+}
+
+	
+h1{  
+	color:rgb(251, 249, 249);
+	background-color: rgb(5, 7, 7);
+}
+h2{
+    color: rgb(255, 165, 0);
+}
+h3{
+    color: #3cb371;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+
+.name{
+
+    font-family:'Gill Sans';
+    font-size: 50px;
+}
+    
+
+
+.item{
+    width: 100px;
+    height: 100px;
+}
+                
+
+
+#nummer{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+
+  /* Vi skiljer elementen med ett kommatecken(,) för att ge möjligheten till att ge flera element samma styling*/
+  h1, h2, h3, p {
+  /*Ger utrymme mellan element*/
+  margin: 10px;
+}
+        
+
+
+	</style>
+  
