@@ -6,7 +6,6 @@
 		<meta name="viewport" content="width=device-width" />
 		
 		<link href="./_app/immutable/assets/0.BGloEFc-.css" rel="stylesheet">
-		<link href="./_app/immutable/assets/4.DUjthzEK.css" rel="stylesheet">
 		<link rel="modulepreload" href="./_app/immutable/entry/start.BqWfW-ZP.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/entry.DyfLI3tH.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.Bnzw7RF6.js">
@@ -14,10 +13,49 @@
 		<link rel="modulepreload" href="./_app/immutable/entry/app.ok5JQy6e.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/index.CK8hOepm.js">
 		<link rel="modulepreload" href="./_app/immutable/nodes/0.OWC0_l7x.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/4.BI9gJWh7.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/5.B0kDVj49.js">
 	</head>
 	<body data-sveltekit-preload-data="hover" data-theme="skeleton">
-		<div style="display: contents">  <nav data-svelte-h="svelte-1fr7mwm"><a href="./photoapp">Photo App</a></nav> <div class="photos svelte-12o138e"><div class="image-wrapper svelte-12o138e"><img src="https://picsum.photos/id/70/367/267" alt="flex egenskaper" class="svelte-12o138e"></div> <div class="image-wrapper svelte-12o138e"><img src="https://picsum.photos/id/88/367/267" alt="flex egenskaper" class="svelte-12o138e"></div> <div class="image-wrapper svelte-12o138e"><img src="https://picsum.photos/id/93/367/267" alt="flex egenskaper" class="svelte-12o138e"></div> </div> 
+		<div style="display: contents">  <nav data-svelte-h="svelte-1fr7mwm"><a href="./photoapp">Photo App</a></nav> <!DOCTYPE html> <html lang="en" data-svelte-h="svelte-z3kkdy"><head><meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Box Layout</title> <style>.container {
+      display: flex; 
+      flex-direction: column; 
+      align-items: center; 
+      margin-top: 20px; 
+    }
+
+    .long-box {
+      width: 60%; 
+      height: 100px; 
+      background-color: red; 
+      margin-bottom: 10px; 
+    }
+
+    .box-container {
+      display: flex; 
+      justify-content: center; 
+      gap: 10px; 
+    }
+
+    .box {
+      width: 250px; 
+      height: 225px; 
+      background-color: red; 
+    }</style></head> <body><div class="container"><div class="long-box"></div> <div class="box-container" id="boxContainer"></div></div> <script>document.addEventListener("DOMContentLoaded", () => {
+      
+      const container = document.getElementById("boxContainer");
+
+      
+      for (let i = 0; i < 3; i++) {
+        
+        const box = document.createElement("div");
+        
+        
+        box.classList.add("box");
+        
+        
+        container.appendChild(box);
+      }
+    });</script></body></html> 
 			
 			<script>
 				{
@@ -34,7 +72,7 @@
 						import("./_app/immutable/entry/app.ok5JQy6e.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
-							node_ids: [0, 4],
+							node_ids: [0, 5],
 							data,
 							form: null,
 							error: null

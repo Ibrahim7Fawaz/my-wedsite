@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		
+		<link href="./_app/immutable/assets/0.BGloEFc-.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/6.DVb49R3_.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.BqWfW-ZP.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/entry.DyfLI3tH.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.Bnzw7RF6.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/paths.CC83HNSp.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.ok5JQy6e.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.CK8hOepm.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.OWC0_l7x.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/6.BzvJXCFo.js">
+	</head>
+	<body data-sveltekit-preload-data="hover" data-theme="skeleton">
+		<div style="display: contents">  <nav data-svelte-h="svelte-1fr7mwm"><a href="./photoapp">Photo App</a></nav> <main class="svelte-1j35bjw"><div class="container svelte-1j35bjw"><form><div style="background-color: white; padding: 10px; margin-bottom: 10px;"></div> <label for="colorSelect" data-svelte-h="svelte-8j3m19">Välj en färg:</label> <select id="colorSelect"><option value="black" class="svelte-1j35bjw" data-svelte-h="svelte-1isrnrr">Svart</option><option value="red" class="svelte-1j35bjw" data-svelte-h="svelte-cg3acp">Röd</option><option value="blue" class="svelte-1j35bjw" data-svelte-h="svelte-ah6lgh">Blå</option><option value="green" class="svelte-1j35bjw" data-svelte-h="svelte-1adna36">Grön</option></select> <label for="name" data-svelte-h="svelte-t4ghih">Namn:</label> <input type="text" id="name"> <label for="epost" data-svelte-h="svelte-13slc9i">epost:</label> <input type="email" id="epost"> <label for="password" data-svelte-h="svelte-4u542a">lösenord:</label> <input type="password" id="password"> <label for="color" data-svelte-h="svelte-jh451g">favourtfaräg</label> <select name="color" id="color"><option value="blue" class="svelte-1j35bjw" data-svelte-h="svelte-ah6lgh">Blå</option></select> <input style="display:block;" type="submit" value="Registrera"></form></div> </main> 
+			
+			<script>
+				{
+					__sveltekit_u2js8h = {
+						base: new URL(".", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.BqWfW-ZP.js"),
+						import("./_app/immutable/entry/app.ok5JQy6e.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 6],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
